@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <rewrite xdt:Transform="InsertIfMissing">
+    <rules>
+      <clear/>
+      <rule name="IndexRule" stopProcessing="true">
+        <match url="^(.*)$"/>
+        <conditions logicalGrouping="MatchAll">
+          <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true"/>
+          <add input="{REQUEST_FILENAME}" matchType="IsDirectory" ignoreCase="false" negate="true"/>
+          <add input="{REQUEST_URI}" negate="true" pattern="/Api/*" ignoreCase="true"/>
+          <add input="{REQUEST_URI}" negate="true" pattern="/signalr/*" ignoreCase="true"/>
+          <add input="{REQUEST_URI}" negate="true" pattern="/umbraco/*" ignoreCase="true"/>
+          <add input="{REQUEST_URI}" negate="true" pattern="/install/*" ignoreCase="true" />
+          <add input="{REQUEST_URI}" negate="true" pattern="/templates/*" ignoreCase="true"/>
+          <add input="{URL}" pattern="^.*\.(asp|aspx|axd|asmx|css|js|jpg|jpeg|png|gif|mp3)$" negate="true" ignoreCase="true" />
+        </conditions>
+        <action type="Rewrite" url="/index.html" appendQueryString="true"/>
+      </rule>
+    </rules>
+  </rewrite>
+</configuration>

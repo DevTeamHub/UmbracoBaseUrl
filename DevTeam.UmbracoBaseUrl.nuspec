@@ -12,11 +12,10 @@
     <releaseNotes>Unstable version without the documentation.</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <dependencies>
-      <dependency id="Microsoft.Aspnet.WebApi.Core" version="5.2.0" />
-      <dependency id="DevTeam.OrderedFilterAttribute" version="0.0.4" />
+      <dependency id="UmbracoCms.Core" version="7.5.6" />
     </dependencies>
-    <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
-    </frameworkAssemblies>
   </metadata>
+  <files>
+    <file src="web.config.transform" target="content" />
+  </files>
 </package>
