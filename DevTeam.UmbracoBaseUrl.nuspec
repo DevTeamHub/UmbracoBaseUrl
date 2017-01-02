@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DevTeam.UmbracoBaseUrl</id>
+    <version>0.0.1</version>
+    <title>Umbraco Base Url</title>
+    <authors>Dev Team Inc.</authors>
+    <owners>Dev Team Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adds base url for Umbraco web site.</description>
+    <summary />
+    <releaseNotes>Unstable version without the documentation.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <dependencies>
+      <dependency id="Microsoft.Aspnet.WebApi.Core" version="5.2.0" />
+      <dependency id="DevTeam.OrderedFilterAttribute" version="0.0.4" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
