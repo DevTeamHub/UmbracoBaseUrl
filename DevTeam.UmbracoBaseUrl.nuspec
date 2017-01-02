@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>DevTeam.UmbracoBaseUrl</id>
-    <version>0.0.3</version>
+    <version>0.0.4</version>
     <title>Umbraco Base Url</title>
     <authors>Dev Team Inc.</authors>
     <owners>Dev Team Inc.</owners>
@@ -16,6 +16,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="web.config.transform" target="content" />
+    <file src="web.config.install.xdt" target="content" />
   </files>
 </package>

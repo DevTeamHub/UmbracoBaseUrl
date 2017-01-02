@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <system.webServer>
-    <rewrite xdt:Transform="Remove" />
     <rewrite xdt:Transform="InsertIfMissing">
       <rules>
-        <rule name="IndexRule" stopProcessing="true">
+        <rule name="UmbracoRule" stopProcessing="true" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)">
           <match url="^(.*)$"/>
           <conditions logicalGrouping="MatchAll">
             <add input="{REQUEST_FILENAME}" matchType="IsFile" ignoreCase="false" negate="true"/>
