@@ -18,16 +18,8 @@ namespace DevTeam.UmbracoBaseUrl
         public string GetUrl(UmbracoContext umbracoContext, int id, Uri current, UrlProviderMode mode)
         {
             var content = umbracoContext.ContentCache.GetById(id);
-
-            if (content?.Parent == null) return null;
-
-            var url = content.Parent.Url;
-            if (!url.EndsWith("/"))
-            {
-                url += "/";
-            }
-
-            return $"{url}{_baseUrl}/{content.UrlName}";
+            if (content?.Parent == null) return $"/{_baseUrl}";
+            return $"{content.Parent.Url}/{content.UrlName}";
         }
 
         public IEnumerable<string> GetOtherUrls(UmbracoContext umbracoContext, int id, Uri current)
