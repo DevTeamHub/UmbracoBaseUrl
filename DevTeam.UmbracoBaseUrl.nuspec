@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>DevTeam.UmbracoBaseUrl</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Umbraco Base Url</title>
     <iconUrl>http://dev-team.com/img/devteam.png</iconUrl>
     <authors>Dev Team Inc.</authors>
